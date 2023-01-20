@@ -1,5 +1,7 @@
 # Prioritysheet
+
 This application is a simple schedule planner that allows users to save their schedule for the day in local storage. The application displays the current date at the top of the page and the hours of the day in a row format, each with a text area and a save button. Users can input their schedule for each hour in the text area and save it by clicking on the save button. The schedule will be saved in local storage and will be rendered back to the text area the next time the user visits the application. Additionally, the application color codes the text areas based on the current time, with past hours being colored in grey, present hour in red, and future hours in green.
+
 ## User Story
 
 ```md
@@ -27,6 +29,7 @@ THEN the saved events persist
 ```
 
 ## Installation
+
 No Install Needed. You can access the webpage through the link below.
 
 https://jbxamora.github.io/prioritysheet/
@@ -49,9 +52,7 @@ function saveText(input, hour) {
 }
 ```
 
-
 ### Append Elements to Container || Setting up Save Button Event
-
 
 ```js
 function createText() {
@@ -115,4 +116,4 @@ SOFTWARE.
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. If the issue goes unresolved for more than a week feel free to contact me at any of the links listed below. Be sure to add me on LinkedIn and Follow me on GitHub to view my course progression. You can also visit the deployed site and sent a messafe through the contact form.
 
-[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/jbxamora)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/jorge-zamora-786945250//)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='40'>](https://www.instagram.com/jbxamora/)  [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg' alt='stackoverflow' height='40'>](https://stackoverflow.com/users/20023706/jbxamora)
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/jbxamora) [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg' alt='linkedin' height='40'>](https://www.linkedin.com/in/jorge-zamora-786945250//) [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg' alt='instagram' height='40'>](https://www.instagram.com/jbxamora/) [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg' alt='stackoverflow' height='40'>](https://stackoverflow.com/users/20023706/jbxamora)

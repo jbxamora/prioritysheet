@@ -1,5 +1,5 @@
 body {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 16px;
   line-height: 1;
   background-color: rgb(3, 3, 3);
@@ -40,11 +40,10 @@ textarea:focus {
   /* border-top: 1px solid #000000; */
   padding: 25px;
   font-size: x-large;
-  
 }
 
 .past {
-  background-color: #C0C0C0;
+  background-color: #c0c0c0;
   color: rgb(4, 4, 4);
 }
 
@@ -63,7 +62,6 @@ textarea:focus {
   background-color: #06aed5;
   color: rgb(9, 8, 8);
   font-size: larger;
-  
 }
 
 .saveBtn i:hover {
