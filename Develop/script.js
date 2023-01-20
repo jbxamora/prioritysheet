@@ -3,13 +3,19 @@
 var currentDay = $("#currentDay");
 var container = $(".container");
 var mHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
-var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM" "5PM"];
+var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
+
+initLocalStorage();
+createText();
 
 
 // Using Moment.js to dynamically update the date.
 function addCurrentDate() {
-  currentDay.text(moment().format("MM DD YYYY"));
+  currentDay.text(moment().format("MMM Do YYYY"));
 }
+// Calling function to display current date
+addCurrentDate();
+
 // Creates Screen Content
 function createText() {
   for (var [i, mHour] of Object.entries(mHours)) {
@@ -63,9 +69,10 @@ function initLocalStorage() {
 function renderLocalStorage() {
   var schedule = JSON.parse(localStorage.getItem("schedule"));
   for (var hour of Object.keys(schedule)) {
-    $("textarea." + hour).text(schedule[hour]);
+    $("." + hour).val(schedule[hour]);
   }
 }
 
+// createText();
 
 
