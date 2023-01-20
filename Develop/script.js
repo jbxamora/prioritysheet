@@ -32,6 +32,37 @@ function createText() {
     button.addClass("btn btn-primary saveBtn col-xl-1");
     newDiv.append(button);
 
+    button.on("click", function (event) {
+      var input = $(event.target).siblings().next().val();
+      var hour = $(event.target).siblings().next().attr("class").split(" ")[0];
+      // add function to save text
+    })
+  }
+  // add function to save data to local storage
+}
 
+function saveText(input, hour) {
+  var schedule = JSON.parse(localStorage.getItem("schedule"));
+  if (!schedule) {
+    initLocalStorage();
+    schedule = JSON.parse(localStorage.getItem("schedule"));
+  }
+  schedule[hour] = input;
+  localStorage.setItem("schedule", JSON.stringify(schedule));
+}
+
+function initLocalStorage() {
+  var schedule = {};
+  if (localStorage.getItem("schedule")) {
+    return;
+  } else {
+    localStorage.setItem("schedule", JSON.stringify(schedule));
+  }
+}
+
+function renderLocalStorage() {
+  var schedule = JSON.parse(localStorage.getItem("schedule"));
+  for (var hour of Object.keys(schedule)) {
+    $("textarea." + hour).text(schedule[hour]);
   }
 }
