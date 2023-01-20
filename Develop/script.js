@@ -41,10 +41,10 @@ function createText() {
     button.on("click", function (event) {
       var input = $(event.target).siblings().next().val();
       var hour = $(event.target).siblings().next().attr("class").split(" ")[0];
-      // add function to save text
+      saveText(input, hour);
     })
   }
-  // add function to save data to local storage
+  renderLocalStorage();
 }
 
 function saveText(input, hour) {
@@ -73,6 +73,19 @@ function renderLocalStorage() {
   }
 }
 
-// createText();
+function TimeColor() {
+  var currentHour = moment().hours();
+  for (var [i, mHour] of Object.entries(mHours)) {
+    var textArea = $("." + mHour);
+    if (mHour < currentHour) {
+      textArea.addClass("past");
+    } else if (mHour === currentHour) {
+      textArea.addClass("present");
+    } else {
+      textArea.addClass("future");
+    }
+  }
+}
 
+TimeColor();
 

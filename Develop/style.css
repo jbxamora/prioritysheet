@@ -12,18 +12,19 @@ textarea {
   border-left: 1px solid black;
   padding: 10px;
 }
-
+textarea:focus{
+    outline: none;
+}
 .dateContent {
   text-align: center;
-  background-color: transparent;
-  resize: none;
+  justify-content: center;
+  /* background-color: ; */
   color: #000000;
-  border-left: 1.5px solid black;
   padding: 12px;
 }
 
 .description {
-  white-space: pre-wrap;
+  white-space: ;
 }
 
 .time-block {
@@ -35,9 +36,9 @@ textarea {
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #db882a;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px solid #000000;
 }
 
 .past {
@@ -60,7 +61,7 @@ textarea {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
-  color: white;
+  color: rgb(9, 8, 8);
 }
 
 .saveBtn i:hover {
