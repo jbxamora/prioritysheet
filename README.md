@@ -31,7 +31,7 @@ No Install Needed. You can access the webpage through the link below.
 
 https://jbxamora.github.io/prioritysheet/
 
-![Picture of Deployed App](./Images/workday.png)
+![Picture of Deployed App](./Images/workday.2.png)
 
 ## Code Snippets
 
@@ -110,8 +110,6 @@ SOFTWARE.
 <img src='https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue'>
 
 ![badmath](https://img.shields.io/github/followers/jbxamora?label=JBXAMORA&logoColor=%23fd2423&style=social)
-
-![badmath](https://img.shields.io/github/license/jbxamora/code-refactor)
 
 ## Contributing
 

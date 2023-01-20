@@ -1,16 +1,20 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: rgb(3, 3, 3);
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: rgb(5, 5, 5);
   border-left: 1px solid black;
   padding: 10px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: larger;
 }
 textarea:focus {
   outline: none;
@@ -18,50 +22,48 @@ textarea:focus {
 .dateContent {
   text-align: center;
   justify-content: center;
-  /* background-color: ; */
-  color: #000000;
+  color: whitesmoke;
   padding: 12px;
 }
 
-.description {
-  white-space: ;
-}
-
 .time-block {
-  border-radius: 15px;
+  border-radius: 13px;
 }
 
 .row {
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(16, 15, 15);
 }
 
 .hour {
-  background-color: #db882a;
+  background-color: #06aed5;
   color: #000000;
-  border-top: 1px solid #000000;
+  /* border-top: 1px solid #000000; */
+  padding: 25px;
+  font-size: x-large;
+  
 }
 
 .past {
-  background-color: #d3d3d3;
-  color: white;
+  background-color: #C0C0C0;
+  color: rgb(4, 4, 4);
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: rgb(4, 4, 4);
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: rgb(4, 4, 4);
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 12px;
   background-color: #06aed5;
   color: rgb(9, 8, 8);
+  font-size: larger;
+  
 }
 
 .saveBtn i:hover {
