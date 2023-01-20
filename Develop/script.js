@@ -2,7 +2,7 @@
 
 var currentDay = $("#currentDay");
 var container = $(".container");
-var mHours = [9, 10, 11, 12, 13, 14, 15, 16 ,17];
+var mHours = [9, 10, 11, 12, 13, 14, 15, 16, 17];
 var hours = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM" "5PM"];
 
 
@@ -66,3 +66,6 @@ function renderLocalStorage() {
     $("textarea." + hour).text(schedule[hour]);
   }
 }
+
+
+
