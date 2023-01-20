@@ -19,30 +19,23 @@ addCurrentDate();
 // Creates Screen Content
 function createText() {
   for (var [i, mHour] of Object.entries(mHours)) {
-    var newDiv = $("<div>");
-    var textArea = $("<textarea>");
-    var button = $("<button>");
-    var timeBlock = $("<span>");
+    var newDiv = $("<div>").addClass("row");
+    var textArea = $("<textarea>").addClass(mHour + " col-xl-10 " + hours[i]);
+    var button = $("<button>").addClass("btn btn-primary saveBtn col-xl-1");
+    var timeBlock = $("<span>")
+      .addClass("col-xl-1 time-block hour")
+      .text(hours[i]);
 
-    // TextArea | TextBlock | Save Button Container
-    newDiv.addClass("row");
-    container.append(newDiv);
-
-    timeBlock.addClass("col-xl-1 time-block hour");
-    timeBlock.text(hours[i]);
-    newDiv.append(timeBlock);
-
-    textArea.addClass(mHour + " col-xl-10 " + hours[i]);
-    newDiv.append(textArea);
-
-    button.addClass("btn btn-primary saveBtn col-xl-1");
-    newDiv.append(button);
+    container.append(newDiv.append(timeBlock).append(textArea).append(button));
 
     button.on("click", function (event) {
-      var input = $(event.target).siblings().next().val();
-      var hour = $(event.target).siblings().next().attr("class").split(" ")[0];
+      var input = $(event.target).siblings("textarea").val();
+      var hour = $(event.target)
+        .siblings("textarea")
+        .attr("class")
+        .split(" ")[0];
       saveText(input, hour);
-    })
+    });
   }
   renderLocalStorage();
 }
